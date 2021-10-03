@@ -34,6 +34,6 @@ Getting a dev environment up and running
 
   python -m pip install briefcase
 
-6. Run your project in your dev environment. Note that the `-d` flag to `briefcase dev` is required the first time around to install missing dependencies that are specified in `pyproject.toml`::
+6. Run your project in your dev environment. Note that the ``-d`` flag to ``briefcase dev`` is required the first time around to install missing dependencies that are specified in ``pyproject.toml``::
 
   briefcase dev -d
