@@ -50,13 +50,10 @@ class IdeaEater(toga.App):
         with open(os.path.join(pathlib.Path.home(), 'ideas.txt'), 'a') as f:
             f.write(self.idea_input.value + '\n')
 
-        # self.main_window.info_dialog(
-        #     'Idea eaten!',
-        #     "Last idea: {}".format(self.idea_input.value)
-        # )
-
         self.last_idea_label.text = 'Last idea eaten: ' + self.idea_input.value
 
+        self.idea_input.clear()
+        self.idea_input.focus()
 
 def main():
     return IdeaEater()
