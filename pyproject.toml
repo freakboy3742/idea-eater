@@ -1,15 +1,15 @@
 [tool.briefcase]
-project_name = "Hello World"
-bundle = "com.example"
+project_name = "Idea Eater"
+bundle = "com.example.ideaeater"
 version = "0.0.1"
-url = "https://example.com/helloworld"
+url = "https://github.com/mattcen/idea-eater"
 license = "BSD license"
-author = 'Matt Cengia'
-author_email = "mattcen@mattcen.com"
+author = 'Matt Cengia, Lilly Ryan'
+author_email = "mattcen@mattcen.com, lilly@attacus.net"
 
 [tool.briefcase.app.helloworld]
-formal_name = "Hello World"
-description = "My first application"
+formal_name = "Idea Eater"
+description = "Takes ideas and eats them"
 icon = "src/helloworld/resources/helloworld"
 sources = ['src/helloworld']
 requires = []
