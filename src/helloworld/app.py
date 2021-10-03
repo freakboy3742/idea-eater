@@ -4,7 +4,8 @@ My first application
 import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
-
+import os
+import pathlib
 
 class IdeaEater(toga.App):
 
@@ -35,9 +36,12 @@ class IdeaEater(toga.App):
         self.main_window.show()
 
     def eat_idea(self, widget):
+        with open(os.path.join(pathlib.Path.home(), 'ideas.txt'), 'a') as f:
+            f.write(self.idea_input.value + '\n')
+
         self.main_window.info_dialog(
-            'Hi there!',
-            "Hello, {}".format(self.idea_input.value)
+            'Idea eaten!',
+            "Last idea: {}".format(self.idea_input.value)
         )
 
 
