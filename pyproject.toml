@@ -1,26 +1,26 @@
 [tool.briefcase]
 project_name = "Idea Eater"
-bundle = "com.example.ideaeater"
+bundle = "com.example.idea_eater"
 version = "0.0.1"
-url = "https://github.com/mattcen/idea-eater"
+url = "https://github.com/mattcen/idea_eater"
 license = "BSD license"
 author = 'Matt Cengia, Lilly Ryan'
 author_email = "mattcen@mattcen.com, lilly@attacus.net"
 
-[tool.briefcase.app.helloworld]
+[tool.briefcase.app.idea_eater]
 formal_name = "Idea Eater"
 description = "Takes ideas and eats them"
-icon = "src/helloworld/resources/helloworld"
-sources = ['src/helloworld']
+icon = "src/idea_eater/resources/idea_eater"
+sources = ['src/idea_eater']
 requires = []
 
 
-[tool.briefcase.app.helloworld.macOS]
+[tool.briefcase.app.idea_eater.macOS]
 requires = [
     'toga-cocoa>=0.3.0.dev20',
 ]
 
-[tool.briefcase.app.helloworld.linux]
+[tool.briefcase.app.idea_eater.linux]
 requires = [
     'toga-gtk>=0.3.0.dev20',
 ]
@@ -32,18 +32,18 @@ system_requires = [
     'gir1.2-webkit-3.0',
 ]
 
-[tool.briefcase.app.helloworld.windows]
+[tool.briefcase.app.idea_eater.windows]
 requires = [
     'toga-winforms>=0.3.0.dev20',
 ]
 
 # Mobile deployments
-[tool.briefcase.app.helloworld.iOS]
+[tool.briefcase.app.idea_eater.iOS]
 requires = [
     'toga-iOS>=0.3.0.dev20',
 ]
 
-[tool.briefcase.app.helloworld.android]
+[tool.briefcase.app.idea_eater.android]
 requires = [
     'toga-android>=0.3.0.dev20',
 ]

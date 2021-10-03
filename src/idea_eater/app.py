@@ -28,21 +28,30 @@ class IdeaEater(toga.App):
             style=Pack(padding=5)
         )
 
+        self.last_idea_label = toga.Label(
+            'Last idea eaten: NONE',
+            style=Pack(padding=(0, 5))
+        )
+
         main_box.add(idea_box)
         main_box.add(button)
+        main_box.add(self.last_idea_label)
 
         self.main_window = toga.MainWindow(title=self.formal_name)
         self.main_window.content = main_box
         self.main_window.show()
 
+
     def eat_idea(self, widget):
         with open(os.path.join(pathlib.Path.home(), 'ideas.txt'), 'a') as f:
             f.write(self.idea_input.value + '\n')
 
-        self.main_window.info_dialog(
-            'Idea eaten!',
-            "Last idea: {}".format(self.idea_input.value)
-        )
+        # self.main_window.info_dialog(
+        #     'Idea eaten!',
+        #     "Last idea: {}".format(self.idea_input.value)
+        # )
+
+        self.last_idea_label.text = 'Last idea eaten: ' + self.idea_input.value
 
 
 def main():
