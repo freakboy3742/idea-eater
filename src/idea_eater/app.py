@@ -33,9 +33,13 @@ class IdeaEater(toga.App):
             style=Pack(padding=(0, 5))
         )
 
+        monster_image = toga.images.Image("resources/idea_eater.png")
+        monster_image_view = toga.ImageView(id='monster_image', image=monster_image)
+
         main_box.add(idea_box)
         main_box.add(button)
         main_box.add(self.last_idea_label)
+        main_box.add(monster_image_view)
 
         self.main_window = toga.MainWindow(title=self.formal_name)
         self.main_window.content = main_box
