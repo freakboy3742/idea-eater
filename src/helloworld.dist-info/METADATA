@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
 Briefcase-Version: 0.3.5
-Name: helloworld
-Formal-Name: Hello World
-App-ID: com.example.helloworld
+Name: ideaeater
+Formal-Name: Idea Eater
+App-ID: com.example.ideaeater
 Version: 0.0.1
-Home-page: https://example.com/helloworld
-Author: Matt Cengia
-Author-email: mattcen@mattcen.com
-Summary: My first application
+Home-page: https://github.com/mattcen/idea-eater
+Author: Matt Cengia, Lilly Ryan
+Author-email: mattcen@mattcen.com, lilly@attacus.net
+Summary: Takes ideas and eats them
