@@ -10,3 +10,30 @@ My first application
 .. _`Briefcase`: https://github.com/beeware/briefcase
 .. _`The BeeWare Project`: https://beeware.org/
 .. _`becoming a financial member of BeeWare`: https://beeware.org/contributing/membership
+
+Getting a dev environment up and running
+========================================
+
+1. Clone this repo::
+
+  git clone git@github.com:mattcen/idea-eater.git
+
+2. Create a Python virtual environment::
+
+  python3 -m venv beeware-venv
+
+3. Activate the virtual environment::
+
+  . beeware-venv/bin/activate
+
+4. Enter the project directory::
+
+  cd idea-eater/
+
+5. Install Briefcase in the virtual environment::
+
+  python -m pip install briefcase
+
+6. Run your project in your dev environment. Note that the `-d` flag to `briefcase dev` is required the first time around to install missing dependencies that are specified in `pyproject.toml`::
+
+  briefcase dev -d
